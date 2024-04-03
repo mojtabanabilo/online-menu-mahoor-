@@ -34,4 +34,8 @@
             background: #171792;
         }
     }
+    @include mediaQueryWidth(600px){
+        width: 90%;
+        padding: 0 5px;
+    }
 }
