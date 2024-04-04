@@ -1,0 +1,12 @@
+@import "../../sass/_mixin.scss";
+@import "../../sass/_variables.scss";
+
+.spinner{
+    width: 100vw;
+    height: 100vh;
+    background: $secondColor;
+    @include flex(column, center, center);
+    img{
+        border-radius: 50%;
+    }
+}

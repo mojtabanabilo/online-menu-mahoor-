@@ -15,7 +15,7 @@ const Modal = (props: {
       <TypeAnimation
         sequence={["به سفره خانه ماهور خوش آمدید", 1000]}
         wrapper="h3"
-        speed={60}
+        speed={1}
         style={{ fontSize: "1.2rem", display: "inline-block" }}
         repeat={1}
       />

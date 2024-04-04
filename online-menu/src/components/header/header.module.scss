@@ -1,0 +1,27 @@
+@import "../../sass/_mixin.scss";
+@import "../../sass/_variables.scss";
+
+.header{
+    width: 100%;
+    height: 300px;
+    background-image: url(../../assets/gif/cheff.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // box-shadow: 0px 0px 50px $lightColor;
+    @include flex(column, center, center);
+    .shadow{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #29292986, #000000cb, #000000);
+        @include flex(column, center, center);
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        h3{
+            margin: 10px 0 20px 0;
+        }
+    }
+}
