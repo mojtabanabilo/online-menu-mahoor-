@@ -15,4 +15,5 @@
     min-width: 100vw;
     min-height: 100vh;
     background: $mainColor;
+    @include flex(column, flex-start, center);
 }

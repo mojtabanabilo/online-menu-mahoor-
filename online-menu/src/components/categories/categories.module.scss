@@ -1,0 +1,77 @@
+@import "../../sass/_mixin.scss";
+@import "../../sass/_variables.scss";
+
+@keyframes identifier {
+    from{
+        height: 0;
+    }
+    to{
+        height: 100%;
+    }
+}
+
+.categories{
+    width: 90%;
+    height: 120px;
+    border: 1px solid $lightColor;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 100%;
+    box-shadow: 0px 20px 20px $lightColor;
+    @include flex(row, center, center);
+    .boxs{
+        width: 60px;
+        height: 70px;
+        background: #aaaaaa79;
+        margin: 0 10px;
+        border-radius: 5px;
+        padding: 2px;
+        cursor: pointer;
+        @include flex(row, center, center);
+        img{
+            width: 60px;
+            height: 60px;
+        }
+        .drop_down{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            @include flex(row, center, center);
+            background: #aaaaaa;
+            transition: all .5s;
+            animation: identifier .5s 1 alternate;
+            p{
+                text-align: center;
+                font-weight: 600;
+                text-shadow: 1px 1px 3px #000;
+            }
+        }
+    }
+}
+@include mediaQueryWidth(550px){
+    .categories{
+        width: 90%;
+        height: 120px;
+        border: 1px solid $lightColor;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px $lightColor;
+        @include flex(row, space-evenly, center);
+        .boxs{
+            margin: 0;
+        }
+    }
+}
+@include mediaQueryWidth(350px){
+    .categories{
+        height: 90px;
+        .boxs{
+            width: 40px;
+            height: 50px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
