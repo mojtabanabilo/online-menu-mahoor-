@@ -2,6 +2,7 @@ import styles from "./header.module.scss";
 import logo from "../../assets/logo/Capture.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { TypeAnimation } from "react-type-animation";
 
 const Header = (): JSX.Element => {
   AOS.init();
@@ -9,13 +10,14 @@ const Header = (): JSX.Element => {
     <header className={styles.header}>
       <div className={styles.shadow}>
         <img src={logo} alt="logo" data-aos="flip-left" />
-        <h3 data-aos="fade-up">ساعت کاری ۷ صبح تا ۱۲ شب</h3>
-        <p data-aos="fade-right" data-aos-delay="300">
-          Mohamadrezanabilo@gmail.com
-        </p>
-        <p data-aos="fade-left" data-aos-delay="300">
-          09393119030
-        </p>
+        <h2>! سلام</h2>
+        <TypeAnimation
+          sequence={["به سفره خانه ماهور خوش آمدید", 1000]}
+          wrapper="h4"
+          speed={1}
+          style={{ fontSize: "1.2rem", display: "inline-block" }}
+          repeat={1}
+        />
       </div>
     </header>
   );
