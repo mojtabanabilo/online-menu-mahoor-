@@ -47,9 +47,11 @@ const ColdDrink = () => {
       {coldDrinkData.map((item, index) => (
         <div className={styles.box} key={index}>
           <img src={item.img} alt="item-picture" />
-          <h3>{item.name}</h3>
-          <p>قیمت: {item.price} تومان</p>
-          <p>هر عدد</p>
+          <div>
+            <h3>{item.name}</h3>
+            <p>قیمت: {item.price} تومان</p>
+            <p>هر عدد</p>
+          </div>
         </div>
       ))}
     </section>

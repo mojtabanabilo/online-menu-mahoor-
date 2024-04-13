@@ -63,6 +63,8 @@ const Categories = (): JSX.Element => {
       <div
         className={styles.boxs}
         datatype="c3"
+        onTouchStart={() => handleHover("c3", true)}
+        onTouchEnd={() => handleHover("c3", false)}
         onMouseEnter={() => handleHover("c3", true)}
         onMouseLeave={() => handleHover("c3", false)}
         onClick={() => navigate('/food')}
@@ -78,6 +80,8 @@ const Categories = (): JSX.Element => {
       <div
         className={styles.boxs}
         datatype="c4"
+        onTouchStart={() => handleHover("c4", true)}
+        onTouchEnd={() => handleHover("c4", false)}
         onMouseEnter={() => handleHover("c4", true)}
         onMouseLeave={() => handleHover("c4", false)}
         onClick={() => navigate('/hookah')}

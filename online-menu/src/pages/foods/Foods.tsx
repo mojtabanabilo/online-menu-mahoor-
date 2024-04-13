@@ -36,9 +36,11 @@ const Foods = (): JSX.Element => {
       {foodsData.map((item, index) => (
         <div className={styles.box} key={index}>
           <img src={item.img} alt="item-picture"/>
-          <h3>{item.name}</h3>
-          <p>قیمت یک نفره: {item.cost_1person} تومان</p>
-          <p>قیمت دو نفره: {item.cost_2person} تومان</p>
+          <div>
+            <h3>{item.name}</h3>
+            <p>قیمت یک نفره: {item.cost_1person} تومان</p>
+            <p>قیمت دو نفره: {item.cost_2person} تومان</p>
+          </div>
         </div>
       ))}
     </section>

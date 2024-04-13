@@ -14,7 +14,7 @@ const hotDrinkData = [
   },
   {
     name: "قهوه",
-    price: "۲۰۰۰۰",
+    price: "۲۰۰۰۰ تومان",
     id: 2,
     img: coffee,
   },
@@ -25,9 +25,11 @@ const HotDrink = () => {
   {hotDrinkData.map((item, index) => (
     <div className={styles.box} key={index}>
       <img src={item.img} alt="item-picture"/>
-      <h3>{item.name}</h3>
-      <p>قیمت: {item.price} تومان</p>
-      <p>هر فنجان</p>
+      <div>
+        <h3>{item.name}</h3>
+        <p>قیمت: {item.price}</p>
+        <p>هر فنجان</p>
+      </div>
     </div>
   ))}
 </section>;

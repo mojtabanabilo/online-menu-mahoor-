@@ -193,9 +193,11 @@ const Hookah = () => {
       {hookahData.map((item, index) => (
         <div className={styles.box} key={index}>
           <img src={hookahPic} alt="item-picture" />
-          <h3>{item.name}</h3>
-          <p>قیمت: {item.price} تومان</p>
-          <p>{item.description}</p>
+          <div>
+            <h3>{item.name}</h3>
+            <p>قیمت: {item.price} تومان</p>
+            <p>{item.description}</p>
+          </div>
         </div>
       ))}
     </section>
